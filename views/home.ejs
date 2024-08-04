@@ -8,7 +8,18 @@
 <body>
     
     <%- include('./partial/nav') %>
-    
+
   <h1>Home Page</h1>
+
+  <h3>Resturant Name: <%= RESTAURANT.name %> </h3>
+  <h3>Resturant Address: <%= RESTAURANT.address %> </h3>
+  <h3>Resturant Phone: <%= RESTAURANT.phone %> </h3>
+  
+  <% if (RESTAURANT.isOpen){ %>
+  <h3>Yes we are open</h3>
+  <%}else{%>
+    <h3>Sorry, we are closed</h3>
+  <%}%>
+
 </body>
 </html>
